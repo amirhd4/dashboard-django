@@ -1,6 +1,27 @@
 {% extends "master.html" %}
+{% block title %}
+    داشبورد
+{% endblock %}
 {% block content %}
-    <div class="d-flex justify-content-center text-center">
-        به صفحه داشبورد خوش امدید
-    </div>
+<div class="container mt-auto" style="height: 500px; overflow-y: auto">
+    <h1 style="margin: 50px">فهرست محصولات</h1>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ردیف</th>
+                <th>نام محصول</th>
+                <th>توضیحات</th>
+                <th>تاریخ ثبت محصول</th>
+            </tr>
+        </thead>
+        {% for pd in pds %}
+            <tr>
+                <td>{{ forloop.counter }}</td>
+                <td>{{ pd.product_name }}</td>
+                <td>{{ pd.product_description|truncatechars:20 }}</td>
+                <td>{{ pd.product_date }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</div>
 {% endblock %}

@@ -4,44 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84bce8e8-212d-4eec-97e7-d1728e348855" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/templates/dashboard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mystaticfiles/icons/dashboard-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/DashboardProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DashboardProject.iml" afterDir="false" />
+    <list default="true" id="84bce8e8-212d-4eec-97e7-d1728e348855" name="Changes" comment="add dashboard page">
+      <change afterPath="$PROJECT_DIR$/dashboard/templates/aboutus.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DashboardProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/DashboardProject/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DashboardProject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/DashboardProject/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/templates/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/templates/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/templates/dashboard.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dashboard/templates/master.html" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/templates/master.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dashboard/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/css/autocomplete.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/admin/css/autocomplete.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/admin/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/css/changelists.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/admin/css/changelists.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/css/dark_mode.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/admin/css/dark_mode.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/css/forms.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/admin/css/forms.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/admin/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/css/nav_sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/admin/css/nav_sidebar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/admin/css/responsive.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/css/responsive_rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/admin/css/responsive_rtl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/css/rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/admin/css/rtl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/css/widgets.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/admin/css/widgets.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/img/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/admin/img/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/img/calendar-icons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/admin/img/calendar-icons.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/img/icon-addlink.svg" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/admin/img/icon-addlink.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/img/icon-changelink.svg" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/admin/img/icon-changelink.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/SelectFilter2.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/admin/js/SelectFilter2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/admin/js/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/admin/RelatedObjectLookups.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/admin/js/admin/RelatedObjectLookups.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/calendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/admin/js/calendar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/admin/js/core.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/popup_response.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/admin/js/popup_response.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/admin/js/theme.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/LICENSE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.min.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +164,11 @@
       <workItem from="1736006856669" duration="2024000" />
       <workItem from="1736017727422" duration="920000" />
       <workItem from="1736060094732" duration="6224000" />
-      <workItem from="1736067678297" duration="237000" />
+      <workItem from="1736067678297" duration="3179000" />
+      <workItem from="1736088549802" duration="3101000" />
+      <workItem from="1736091932868" duration="17000" />
+      <workItem from="1736091958639" duration="4631000" />
+      <workItem from="1736096932415" duration="3878000" />
     </task>
     <task id="LOCAL-00001" summary="settings changed">
       <option name="closed" value="true" />
@@ -227,7 +202,23 @@
       <option name="project" value="LOCAL" />
       <updated>1736062648534</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add dashboard page">
+      <option name="closed" value="true" />
+      <created>1736068160732</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1736068160732</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add dashboard page">
+      <option name="closed" value="true" />
+      <created>1736068430418</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1736068430418</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,7 +228,8 @@
     <MESSAGE value="settings changed" />
     <MESSAGE value="first changes" />
     <MESSAGE value="add fav icon, bootstrap5, static root, and change the debug mode to false.&#10;allow hosts in settings files changed to &quot;*&quot; for accepting any host." />
-    <option name="LAST_COMMIT_MESSAGE" value="add fav icon, bootstrap5, static root, and change the debug mode to false.&#10;allow hosts in settings files changed to &quot;*&quot; for accepting any host." />
+    <MESSAGE value="add dashboard page" />
+    <option name="LAST_COMMIT_MESSAGE" value="add dashboard page" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DashboardProject$tests.coverage" NAME="tests Coverage Results" MODIFIED="1736063468080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dashboard" />
