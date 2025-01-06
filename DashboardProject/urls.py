@@ -25,4 +25,7 @@ urlpatterns = [
     path("", views.dashboard, name='dashboard'),
     path("dashboard", views.dashboard, name='dashboard'),
     path("aboutus", views.aboutus, name='aboutus'),
+    path("details/<int:pid>", views.details, name='aboutus'),
+    path('export_product_changes/<int:pid>', views.export_product_changes_to_excel, name='export_product_changes'),
+    path('export_products/', views.export_products_to_excel, name='export_product_changes'),
 ]

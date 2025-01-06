@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84bce8e8-212d-4eec-97e7-d1728e348855" name="Changes" comment="add dashboard page">
-      <change afterPath="$PROJECT_DIR$/dashboard/templates/aboutus.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="84bce8e8-212d-4eec-97e7-d1728e348855" name="Changes" comment="add aboutus page.&#10;display the products list">
+      <change afterPath="$PROJECT_DIR$/dashboard/templates/details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mystaticfiles/icons/change-dashboard.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DashboardProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/DashboardProject/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DashboardProject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/DashboardProject/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dashboard/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/templates/aboutus.html" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/templates/aboutus.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dashboard/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/templates/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/templates/master.html" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/templates/master.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dashboard/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +44,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -169,6 +173,8 @@
       <workItem from="1736091932868" duration="17000" />
       <workItem from="1736091958639" duration="4631000" />
       <workItem from="1736096932415" duration="3878000" />
+      <workItem from="1736145577605" duration="3943000" />
+      <workItem from="1736149770043" duration="11442000" />
     </task>
     <task id="LOCAL-00001" summary="settings changed">
       <option name="closed" value="true" />
@@ -218,7 +224,23 @@
       <option name="project" value="LOCAL" />
       <updated>1736068430418</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add aboutus page.&#10;display the products list">
+      <option name="closed" value="true" />
+      <created>1736145639255</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1736145639255</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add aboutus page.&#10;display the products list">
+      <option name="closed" value="true" />
+      <created>1736145643462</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1736145643462</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,7 +251,8 @@
     <MESSAGE value="first changes" />
     <MESSAGE value="add fav icon, bootstrap5, static root, and change the debug mode to false.&#10;allow hosts in settings files changed to &quot;*&quot; for accepting any host." />
     <MESSAGE value="add dashboard page" />
-    <option name="LAST_COMMIT_MESSAGE" value="add dashboard page" />
+    <MESSAGE value="add aboutus page.&#10;display the products list" />
+    <option name="LAST_COMMIT_MESSAGE" value="add aboutus page.&#10;display the products list" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DashboardProject$tests.coverage" NAME="tests Coverage Results" MODIFIED="1736063468080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dashboard" />

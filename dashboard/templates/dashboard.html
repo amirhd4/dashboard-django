@@ -1,27 +1,41 @@
 {% extends "master.html" %}
+{% load static %}
 {% block title %}
     داشبورد
 {% endblock %}
 {% block content %}
-<div class="container mt-auto" style="height: 500px; overflow-y: auto">
-    <h1 style="margin: 50px">فهرست محصولات</h1>
-    <table class="table table-striped">
-        <thead>
+    <div class="container mt-auto" style="height: 500px; overflow-y: auto">
+        <h1 style="margin: 50px">فهرست محصولات</h1>
+        <table class="table table-striped">
+            <thead>
             <tr>
                 <th>ردیف</th>
                 <th>نام محصول</th>
                 <th>توضیحات</th>
                 <th>تاریخ ثبت محصول</th>
+                <th>قیمت(ریال)</th>
             </tr>
-        </thead>
-        {% for pd in pds %}
-            <tr>
-                <td>{{ forloop.counter }}</td>
-                <td>{{ pd.product_name }}</td>
-                <td>{{ pd.product_description|truncatechars:20 }}</td>
-                <td>{{ pd.product_date }}</td>
-            </tr>
-        {% endfor %}
-    </table>
-</div>
+            </thead>
+            {% for pd in pds %}
+                <tr>
+                    <td>{{ forloop.counter }}</td>
+                    <td>{{ pd.product_name }}</td>
+                    <td>{{ pd.product_description|truncatechars:20 }}</td>
+                    <td>{{ pd.product_date }}</td>
+                    <td>{{ pd.product_price|floatformat:"0g" }}</td>
+                    <td class="bg-gradient">
+                        <a href="details/{{ pd.product_id }}">
+                            <img alt="مشاهده و تغییرات"
+                                 src="{% static "icons/change-dashboard.png" %}"
+                                 width="30px" height="30px"/>
+                        </a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+    <div class="container mt-5">
+        <p><a href="/export_products/">گرفتن خروجی اکسل</a></p>
+    </div>
+
 {% endblock %}
