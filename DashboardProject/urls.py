@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path
 
 from dashboard import views
+from dashboard.views import ExportPDSToExcel
 
 urlpatterns = [
     path(
@@ -26,6 +27,7 @@ urlpatterns = [
     path("dashboard", views.dashboard, name='dashboard'),
     path("aboutus", views.aboutus, name='aboutus'),
     path("details/<int:pid>", views.details, name='aboutus'),
-    path('export_product_changes/<int:pid>', views.export_product_changes_to_excel, name='export_product_changes'),
-    path('export_products/', views.export_products_to_excel, name='export_product_changes'),
+    path('export_product_changes/<int:pid>', views.ExportPDCSToExcel.as_view(), name='export_product_changes'),
+    path('export_products/', ExportPDSToExcel.as_view(), name='export_products'),
+    path('details/submit_price/<int:pid>', views.submit_price, name='submit_price'),
 ]

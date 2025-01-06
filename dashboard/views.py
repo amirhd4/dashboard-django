@@ -1,16 +1,16 @@
 import datetime
 
 import pandas
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.template import loader
 from dashboard.models import Products, ProductChanges
-import jdatetime
+from abc import ABC, abstractmethod
+from django.views import View
+
 
 def dashboard(request):
     pds = Products.objects.all().values()
     template = loader.get_template('dashboard.html')
-    for i in range(pds.__len__()):
-        pds[i]["product_date"] = convert_to_persian_date(pds[i])
     context = {
         "pds": pds
     }
@@ -25,9 +25,6 @@ def details(request, pid):
     pdcs = ProductChanges.objects.filter(product_id=pid).values().order_by("-product_date")
     if not (not pds and not pdcs):
         pd = pds[0]
-        for i in range(pdcs.__len__()):
-            pdcs[i]["product_date"] = convert_to_persian_date(pdcs[i])
-        pd["product_date"] = convert_to_persian_date(pds[0])
     else:
         pd, pdcs = [], []
     context = {
@@ -37,36 +34,43 @@ def details(request, pid):
     template = loader.get_template("details.html")
     return HttpResponse(template.render(context, request))
 
-def convert_to_persian_date(pd):
-    return jdatetime.datetime.fromtimestamp(pd["product_date"].timestamp()).__format__('%Y/%m/%d %H:%M:%S')
+
+def submit_price(request, pid):
+    Products.objects.filter(product_id=pid).update(product_price=request.POST["price"])
+    ProductChanges(product_id=pid, product_price=request.POST["price"], product_date=datetime.datetime.now()).save()
+    return HttpResponseRedirect(f'/details/{pid}')
 
 
-def export_product_changes_to_excel(request, pid):
-    pdcs = ProductChanges.objects.filter(product_id=pid).values()
+class ExportExcel(ABC):
+    @abstractmethod
+    def get_records(self, pid = None):
+        pass
 
-    for i in range(len(pdcs)):
-        dt = datetime.datetime.fromtimestamp(pdcs[i]["product_date"].timestamp())
-        pdcs[i]["product_date"] = dt.replace(tzinfo=None)
-        pdcs[i]["product_date"] = convert_to_persian_date(pdcs[i])
-    df = pandas.DataFrame(list(pdcs))
-    response = HttpResponse(content_type='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet')
-    response['Content-Disposition'] = 'attachment; filename=pdcs.xlsx'
+    @staticmethod
+    def create_excel_file(pdcs, req):
+        for i in range(len(pdcs)):
+            dt = datetime.datetime.fromtimestamp(pdcs[i]["product_date"].timestamp())
+            pdcs[i]["product_date"] = dt.replace(tzinfo=None)
+        df = pandas.DataFrame(list(pdcs))
+        response = HttpResponse(content_type='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet')
+        response['Content-Disposition'] = 'attachment; filename=pdcs.xlsx'
 
-    df.to_excel(response, index=False, engine='openpyxl')
+        df.to_excel(response, index=False, engine='openpyxl')
 
-    return response
+        return response
 
-def export_products_to_excel(request):
-    pds = Products.objects.all().values()
+class ExportPDCSToExcel(ExportExcel, View):
+    def get(self, request, pid, *args, **kwargs):
+        return self.get_records(pid)
 
-    for i in range(len(pds)):
-        dt = datetime.datetime.fromtimestamp(pds[i]["product_date"].timestamp())
-        pds[i]["product_date"] = dt.replace(tzinfo=None)
-        pds[i]["product_date"] = convert_to_persian_date(pds[i])
-    df = pandas.DataFrame(list(pds))
-    response = HttpResponse(content_type='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet')
-    response['Content-Disposition'] = 'attachment; filename=pdcs.xlsx'
+    def get_records(self, pid=None):
+        pdcs = ProductChanges.objects.filter(product_id=pid).values()
+        return self.create_excel_file(pdcs, self.request)
 
-    df.to_excel(response, index=False, engine='openpyxl')
+class ExportPDSToExcel(ExportExcel, View):
+    def get(self, request, *args, **kwargs):
+        return self.get_records()
 
-    return response
+    def get_records(self, pid=None):
+        pds = Products.objects.all().values()
+        return self.create_excel_file(pds, self.request)

@@ -4,6 +4,20 @@
 {% endblock %}
 {% block content %}
     <div class="container mt-5">
+    <div class="container mt-5 text-end w-25">
+            <h2>ثبت قیمت جدید</h2>
+            <form action="/details/submit_price/{{ pd.product_id }}" method="post">
+                {% csrf_token %}
+                <div class="mb-3 mt-3">
+                    <label for="price">ثبت قیمت جدید</label>
+                    <input type="number" class="form-control" id="price" placeholder="2,000,000..." name="price">
+                </div>
+                <button type="submit" class="btn btn-primary">ثبت</button>
+            </form>
+        <div class="mt-5">
+            <p><a href="/export_product_changes/{{ pd.product_id }}">گرفتن خروجی اکسل</a></p>
+        </div>
+        </div>
         <div class="row">
             <div class="col-sm-4">
                 <h2>{{ pd.product_name }}</h2>
@@ -19,15 +33,12 @@
                     <p>{{ p.product_date }}</p>
                 {% endfor %}
             </div>
-        <div class="col-sm-4">
+            <div class="col-sm-4">
                 <h2>تغییرات قیمت</h2>
                 {% for p in pdcs %}
                     <p>{{ p.product_price|floatformat:"0g" }}</p>
                 {% endfor %}
             </div>
         </div>
-    <div>
-        <p><a href="/export_products/{{ pd.product_id }}">گرفتن خروجی اکسل</a></p>
-    </div>
     </div>
 {% endblock %}
