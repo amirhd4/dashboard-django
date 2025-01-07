@@ -38,3 +38,14 @@
 ```bash
   python manage.py runserver
 ```
+## DB Admin
+- if you want use the default admin section for working on database, do these steps:
+- run this command:
+```bash
+python manage.py createsuperuser
+```
+- after you created a super user for admin, you can use it in below address:
+```bash
+localhost:yourlocalport/admin
+```
+```
