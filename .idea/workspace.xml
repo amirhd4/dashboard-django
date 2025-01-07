@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84bce8e8-212d-4eec-97e7-d1728e348855" name="Changes" comment="add details page.&#10;some other changes.">
+    <list default="true" id="84bce8e8-212d-4eec-97e7-d1728e348855" name="Changes" comment="change debug mode to false and adding">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/dashboard-db.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DashboardProject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/DashboardProject/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/templates/details.html" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/templates/details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DashboardProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/DashboardProject/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +65,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Amir/Desktop/test/DashboardProject/mystaticfiles/icons&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Amir/Desktop/test/DashboardProject/database&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -77,6 +77,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Amir\Desktop\test\DashboardProject\database" />
       <recent name="C:\Users\Amir\Desktop\test\DashboardProject\mystaticfiles\icons" />
       <recent name="C:\Users\Amir\Desktop\test\DashboardProject\staticfiles\icons" />
     </key>
@@ -171,6 +172,11 @@
       <workItem from="1736145577605" duration="3943000" />
       <workItem from="1736149770043" duration="11442000" />
       <workItem from="1736183055603" duration="10449000" />
+      <workItem from="1736193664976" duration="66000" />
+      <workItem from="1736237484232" duration="738000" />
+      <workItem from="1736239503521" duration="862000" />
+      <workItem from="1736240381858" duration="736000" />
+      <workItem from="1736241131990" duration="147000" />
     </task>
     <task id="LOCAL-00001" summary="settings changed">
       <option name="closed" value="true" />
@@ -244,7 +250,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736183185628</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="test project done.">
+      <option name="closed" value="true" />
+      <created>1736193718480</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1736193718480</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,7 +271,8 @@
     <MESSAGE value="add dashboard page" />
     <MESSAGE value="add aboutus page.&#10;display the products list" />
     <MESSAGE value="add details page.&#10;some other changes." />
-    <option name="LAST_COMMIT_MESSAGE" value="add details page.&#10;some other changes." />
+    <MESSAGE value="test project done." />
+    <option name="LAST_COMMIT_MESSAGE" value="test project done." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DashboardProject$tests.coverage" NAME="tests Coverage Results" MODIFIED="1736063468080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dashboard" />
