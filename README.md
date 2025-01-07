@@ -33,6 +33,7 @@
   python -m pip install -r requirements.txt
 ```
 - import the <b><i>dashboard</i></b> db with utf8 charset in your mysql
+- you must configure your mysql with user account that specified in database section, or you can change the settings file with your favorite user account
 - finally, run this command and browse to showed link
 ```bash
   python manage.py runserver
