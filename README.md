@@ -48,4 +48,3 @@ python manage.py createsuperuser
 ```bash
 localhost:yourlocalport/admin
 ```
-```
